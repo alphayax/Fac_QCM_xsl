@@ -18,9 +18,11 @@ www.eretnia.hd.free.fr/QCM/
 
 ### XML
  On dénombrera plusieurs types de questions et de réponses :
+ 
 #### Questions
  - Texte
  - Image
+
 #### Réponses
 - Choix unique
 - Choix Multiple
