@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!ELEMENT qcm (theme+)>
+<!ELEMENT theme (question+)>
+<!ELEMENT question (libelle, choix+)>
+<!ELEMENT libelle (#PCDATA)>
+<!ELEMENT choix (#PCDATA)>
+<!ATTLIST qcm matiere CDATA #REQUIRED>
+<!ATTLIST theme titre CDATA #REQUIRED>
+<!ATTLIST question type CDATA #REQUIRED>
+<!ATTLIST question choix CDATA #REQUIRED>
+<!ATTLIST choix score CDATA #REQUIRED>

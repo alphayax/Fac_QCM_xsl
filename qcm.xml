@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="qcm.xsl" type="text/xsl" ?>
+<!DOCTYPE Generique SYSTEM "qcm.dtd">
+
+<qcm matiere="Animes">
+ <theme titre="generiques">
+  <question type="texte" choix="radio">
+   <libelle>Qui chante "Life", la chanson du 5eme ending de Bleach ?</libelle>.
+   <choix score="5">Yui</choix>
+   <choix score="-10">Asian Kung Fu Generation</choix>
+   <choix score="-5">Akino Arai</choix>
+  </question>
+  <question type="texte" choix="radio">
+   <libelle>Quelle est la chanson du 1eme ending de Bleach ?</libelle>.
+   <choix score="-10">Maaya Sakamoto - Hashiru</choix>
+   <choix score="5">Rie Fu - Life is like a boat</choix>
+   <choix score="-5">Utada Hikaru - Passion</choix>
+  </question>
+  <question type="texte" choix="cases">
+   <libelle>Quel est le nom de la peluche d'Ichi-oneesaaaan ?</libelle>.
+   <choix score="5">Postouf</choix>
+   <choix score="5">KON</choix>
+   <choix score="-15">obiwan kenobi</choix>
+  </question>
+ </theme>
+ <theme titre="Série">
+  <question type="texte" choix="radio">
+   <libelle>Full full full... MOOOOOOOOOOOOOOON !!</libelle>.
+   <choix score="5">月詠 －MOON PHASE－</choix>
+   <choix score="-10">Asian Kung Fu Generation</choix>
+   <choix score="-5">Bleach</choix>
+  </question>
+  <question type="texte" choix="radio">
+   <libelle>Kahméhaméhaaaaa !!!</libelle>.
+   <choix score="-5">月詠 －MOON PHASE－</choix>
+   <choix score="5">Dragon Ball</choix>
+   <choix score="-5">Sailor Moon</choix>
+  </question>
+  <question type="image" choix="cases">
+   <libelle>tsukuyomi.jpg</libelle>.
+   <choix score="2">月詠 －MOON PHASE－</choix>
+   <choix score="2">Full Full Full Mooooooon !</choix>
+   <choix score="2">Onee sama ^^</choix>
+   <choix score="2">Watashi no shingomen !!</choix>
+  </question>
+</theme>
+<theme titre="Japonais">
+  <question type="texte" choix="texte">
+    <libelle>Konnichiwa</libelle>.
+    <choix score="5">Bonjour</choix>
+  </question>
+ </theme>
+<theme titre="JPOP">
+  <question type="texte" choix="radio">
+   <libelle>Qui chante : 'Can u keep a secret', 'sakura drops' et 'Final Distance'</libelle>.
+   <choix score="7">Utara Hikaru</choix>
+   <choix score="-2">Ayumi Hamasaki</choix>
+   <choix score="-1">Yui</choix>
+   <choix score="-2">Zone</choix>
+  </question>
+ </theme>
+</qcm>

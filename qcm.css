@@ -1,0 +1,219 @@
+/*
+	Fichier : Style.css
+	Version : 0.6
+	Programeur : Yann Ponzoni
+	Description : Ce fichier régit les comportements
+	des styles de base pour le site. Il définit les 
+	agencements des DIV ainsi que la charte graphique.
+	
+	Historique
+	-- v 0.6 --
+	 - Ajout d'une classe. Et oui, j'en avais pas encore mis !
+	   Cette derniere aura pour principal but d'afficher le texte
+	   dans une couleur bleue (d'ou son nom : ".bleu").
+	-- v 0.5 --
+	 - Augmentation de la taille pour la balise <F_Titre>
+	 - Diminution de la bordure de la division #Ban à 0px.
+	   Cela causait des bugs (une ligne) dans certains fichiers
+	   et pas d'autres.
+	-- v 0.4 --
+	 - Personalisation de la balise TextArea
+	-- v 0.3 --
+	 - Modification de la largeur du DIV du menu.
+	  (réduction de taille 250px -> 200px)
+	-- v 0.2 --
+	 - Création de balises particulières pour la mise en forme
+	   simplifiée dans les listes
+	-- V 0.1 --
+	 - Création du fichier
+	 - Mise en place des DIV
+	 - Personalisation de certains controles standarts
+	   (a, body, input, table, p)
+*/
+
+
+/**************************************************/
+/* Style des DIVisions et présentation de la page */
+/**************************************************/
+
+#Ban
+{
+top:0px;
+left:340px;
+width:600px;
+height:80px;
+position:absolute;
+text-align:center;
+border-bottom-width:0px;
+border-bottom-style:solid;
+border-color:#000000;
+background-image:url(Images/Base/Ban_air.jpg);
+}
+
+#ombre_Ban
+{
+top:80px;
+left:200px;
+width:100%;
+height:6px;
+position:absolute;
+background-image:url(Images/Base/Ombre.jpg);
+}
+
+#menu
+{
+top:80px;
+left:0px;
+width:190px;
+height:320px;
+position:absolute;
+margin-left:10px;
+border-bottom-width:1px;
+border-bottom-style:solid;
+border-right-width:1px;
+border-right-style:solid;
+border-color:#000000;
+}
+
+#ombre_Menu
+{
+top:400px;
+left:0px;
+width:200px;
+height:6px;
+position:absolute;
+background-image:url(Images/Base/Ombre.jpg);
+}
+
+#contenu
+{
+top:90px;
+left:210px;
+width:974px;
+height:600px;
+position:absolute;
+background-image:url(coin.jpg);
+}
+
+
+/*******************************************/
+/* Personalisation des controles standards */
+/*******************************************/
+
+a
+{
+ color: #9900CC;
+ text-decoration: none;
+ font-style:italic;
+}
+a:visited { color: #9900CC; text-decoration: none; }
+a:hover { color: #AA00AA; text-decoration: underline; }
+a:active { color: #CC0000; text-decoration: none; }
+
+body
+{
+ /* Barres de défillement */
+ /*
+ scrollbar-face-color: #000000;
+ scrollbar-shadow-color: #0080C0;
+ scrollbar-highlight-color: #0080C0;
+ scrollbar-3dlight-color: #0080C0;
+ scrollbar-darkshadow-color: #004070;
+ scrollbar-track-color: #222222;
+ scrollbar-arrow-color: #FFFFFF;
+ */
+ 
+ /* Body */
+ font-family: Verdana, Arial, Helvetica, sans-serif;
+ font-size: 10pt;
+ color: #5287BB;
+ background-color: #FFFFFF;
+}
+
+input
+{
+ font-family: Verdana, Arial, Helvetica, sans-serif;
+ border: 1px solid;
+ font-size: 10pt;
+ border-color: #0080C0;
+ color: #0080C0;
+}
+
+table
+{
+ border: 0px solid;
+ font-size: 10pt;
+}
+
+p
+{
+ margin-left:10px;
+}
+
+
+textarea
+{
+ font-family: Verdana, Arial, Helvetica, sans-serif;
+ background-color: #FFFFFF;
+ font-size: 10pt;
+ border: 1px solid;
+ color: #0080C0;
+ border-color: #0080C0;
+}
+
+/*
+select
+{
+ font-family: Verdana, Arial, Helvetica, sans-serif;
+ background-color: #000000;
+ color: #FFFFFF;
+}
+*/
+
+
+/***********/
+/* Classes */
+/***********/
+
+.bleu
+{
+ color: #5555BB;
+}
+
+
+/********************************/
+/* Balises personelles rajoutés */
+/********************************/
+
+F_Titre
+{
+ color: #5555BB;
+ margin-left: 10px;
+ font-weight: bold;
+ font-size: 12pt;
+}
+
+F_Entete
+{
+ font-size: 10pt;
+ margin-left: 30px;
+ font-weight: bold;
+}
+
+F_Attribut
+{
+ color: #AA55BB;
+ font-size: 10pt;
+ margin-left: 40px;
+}
+
+F_Valeur
+{
+ font-size: 10pt;
+ font-style:italic;
+}
+
+plouf
+{
+ margin-left: 100px;
+}
