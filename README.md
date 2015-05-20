@@ -8,68 +8,52 @@ Mirroirs:
 82.228.150.24/QCM/
 www.eretnia.hd.free.fr/QCM/
 
-Notes Imoprtantes :
-	- Certains caractères japonais nécécittent l'installation d'une police spéciale sur l'ordinateur
-	executant la page web. Il faut donc pour que l'affichage soit OK a 100% que votre ordinateur prenne
-	en charge les polices d'extreme orient (Japonais, chinois simplifié, etc...)
-	- Le programme devrait théoriquement fonctionner sous tous systèmes et sous tous les navigateurs
-	vu que le code utilisé est conforme aux recommendations du W3C. 
-	- Environnement de développement : WinXP & Firefox 1.5
+## Notes Importantes
+- Certains caractÃ¨res japonais nÃ©cÃ©cittent l'installation d'une police spÃ©ciale sur l'ordinateur executant la page web. Il faut donc pour que l'affichage soit OK a 100% que votre ordinateur prenne en charge les polices d'extreme orient (Japonais, chinois simplifiÃ©, etc...)
+- Le programme devrait thÃ©oriquement fonctionner sous tous systÃ¨mes et sous tous les navigateurs vu que le code utilisÃ© est conforme aux recommendations du W3C. 
+- Environnement de dÃ©veloppement : WinXP & Firefox 1.5
 
 
-Points forts :
+## Points forts
 
--XML
-	On dénombrera plusieurs types de questions et de réponses:
-	Questions:
-		- Texte
-		- Image
-	Réponses:
-		- Choix unique
-		- Choix Multiple
-		- Texte a rentrer
-		- Je ne sais pas (Chiiiiiiiii !! Wakaranai !!)
+### XML
+ On dÃ©nombrera plusieurs types de questions et de rÃ©ponses :
+ Questions:
+ - Texte
+ - Image
+RÃ©ponses:
+- Choix unique
+- Choix Multiple
+- Texte a rentrer
+- Je ne sais pas (Chiiiiiiiii !! Wakaranai !!)
 	
-	Il est a noter la hioerarchie de couleur pour la présentation du QCM, affichant un dégradé 
-	du bleu foncé (pout les themes) allant au bleu clai pour les réponses en passant par un bleu leger 
-	pour les questions.
-	La réponse "Je ne sais pas" se démarque également par un fond spécifique (généré a partir d'une image)
+Il est a noter la hioerarchie de couleur pour la prÃ©sentation du QCM, affichant un dÃ©gradÃ© du bleu foncÃ© (pout les themes) allant au bleu clai pour les rÃ©ponses en passant par un bleu leger pour les questions.
+La rÃ©ponse "Je ne sais pas" se dÃ©marque Ã©galement par un fond spÃ©cifique (gÃ©nÃ©rÃ© a partir d'une image)
 
 
--XSL
-	La page de données XML est interprété par une feuille XSL.
-	Dans un premier temps, c'est qcm.xsl qui est appellé pour présenter les questions.
-	Par la suite, une fois que les questions ont été correctement saisies, c'est score.xsl qui est invoqué.
-	Enfin, via cette derniere et par l'intermediaire d'une balise <iframe> une 'animation' (hum hum) SVG est 
-	présentée suivant la feuille de style stats.xsl
+### XSL
+La page de donnÃ©es XML est interprÃ©tÃ© par une feuille XSL.
+Dans un premier temps, c'est qcm.xsl qui est appellÃ© pour prÃ©senter les questions.
+Par la suite, une fois que les questions ont Ã©tÃ© correctement saisies, c'est score.xsl qui est invoquÃ©.
+Enfin, via cette derniere et par l'intermediaire d'une balise <iframe> une 'animation' (hum hum) SVG est prÃ©sentÃ©e suivant la feuille de style stats.xsl
 
 
--SVG
-	Comme cité plus haut, le SVG s'affiche via une balise <iframe> contenue dans score.xsl
-	Le code du fichier SVG en question est généré via XSLTproc dans le PHP. Il redirige alors le flux
-	vers le fichier stats_svg.xhtml. Ce dernier fichier est généré a partir de stats.xsl et qcm.xml
-	Il présente les scores aux differants themes sous forme d'histogrammes horizontaux, avec pour terminer
-	le score total atteint (visible dans une couleur différante).
+### SVG
+Comme citÃ© plus haut, le SVG s'affiche via une balise <iframe> contenue dans score.xsl
+Le code du fichier SVG en question est gÃ©nÃ©rÃ© via XSLTproc dans le PHP. Il redirige alors le flux vers le fichier stats_svg.xhtml. Ce dernier fichier est gÃ©nÃ©rÃ© a partir de stats.xsl et qcm.xml
+Il prÃ©sente les scores aux differants themes sous forme d'histogrammes horizontaux, avec pour terminer le score total atteint (visible dans une couleur diffÃ©rante).
 
--PHP
-	Le fichier qcm.php est présent pour parser la chaine a renvoyer a XSLTproc et pour transmetre les
-	parametres a la feuille XSL.
-	XSLTproc est utilisé quand a lui par 2 fois : 
-		- Generation de la page de correction du questionnaire
-		- Generation du SVG
+### PHP
+Le fichier qcm.php est prÃ©sent pour parser la chaine a renvoyer a XSLTproc et pour transmetre les parametres a la feuille XSL.
+XSLTproc est utilisÃ© quand a lui par 2 fois : 
+- Generation de la page de correction du questionnaire
+- Generation du SVG
 
--Mise en forme
-	Les fichiers qcm.js et qcm.css servent juste à mettre en page les pages web.
+## Mise en forme
+Les fichiers qcm.js et qcm.css servent juste Ã  mettre en page les pages web.
 
 
 Concernant les questions du QCM:
 
-	Mon choix de thème s'est porté sur les "animes".
-	C'est un choix qui désignais a l'origine le monde de la Japanimation (Annimation nipponne) mais j'ai
-	préféré l'étendre sur les themes "Génériques", "Séries", "Japonnais" et "JPOP" l'univers en question étant 
-	assez large en informations :P
-	
-	
-	
-	
-	
+Mon choix de thÃ¨me s'est portÃ© sur les "animes".
+C'est un choix qui dÃ©signais a l'origine le monde de la Japanimation (Annimation nipponne) mais j'ai prÃ©fÃ©rÃ© l'Ã©tendre sur les themes "GÃ©nÃ©riques", "SÃ©ries", "Japonnais" et "JPOP" l'univers en question Ã©tant assez large en informations :P
