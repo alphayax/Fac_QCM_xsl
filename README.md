@@ -1,12 +1,6 @@
-Ponzoni Yann
-IUP GMI 2
+**Auteur** : Ponzoni Yann (IUP GMI 2)
 
-Projet : 
-Questionnaire a Choix Multiples XML-XSL-SVG avec utilisation de XSLTproc via PHP ^^
-
-Mirroirs:
-82.228.150.24/QCM/
-www.eretnia.hd.free.fr/QCM/
+**Projet** : Questionnaire a Choix Multiples XML-XSL-SVG avec utilisation de XSLTproc via PHP ^^
 
 ## Notes Importantes
 - Certains caractères japonais nécécittent l'installation d'une police spéciale sur l'ordinateur executant la page web. Il faut donc pour que l'affichage soit OK a 100% que votre ordinateur prenne en charge les polices d'extreme orient (Japonais, chinois simplifié, etc...)
@@ -62,7 +56,7 @@ XSLTproc est utilisé quand a lui par 2 fois :
 Les fichiers qcm.js et qcm.css servent juste à mettre en page les pages web.
 
 
-Concernant les questions du QCM:
+## Concernant les questions du QCM
 
 Mon choix de thème s'est porté sur les "animes".
 C'est un choix qui désignais a l'origine le monde de la Japanimation (Annimation nipponne) mais j'ai préféré l'étendre sur les themes "Génériques", "Séries", "Japonnais" et "JPOP" l'univers en question étant assez large en informations :P
